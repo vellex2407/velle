@@ -1,0 +1,6 @@
+{
+  "name": "VERDANT — Personal Portfolio",
+  "description": "A sophisticated, interactive personal portfolio for a Computer Engineering graduate specializing in web development, software engineering, and IoT systems.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

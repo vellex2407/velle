@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-deep-soil: #171F19;
+    --color-forest-canopy: #243D30;
+    --color-dark-moss: #304A39;
+    --color-mossy-green: #71866A;
+    --color-pale-jade: #DCE8DA;
+    --color-muted-sage: #A6B59D;
+    --color-embered-earth: #A85F3C;
+    --color-soft-amber: #D49A61;
+    --color-warm-ivory: #F4F1E8;
+  }
+
+  body {
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--color-deep-soil);
+    color: var(--color-pale-jade);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  code, pre, .font-mono-tech {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+  }
+}
+
+/* Custom scrollbar for refined editorial feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #171F19;
+}
+::-webkit-scrollbar-thumb {
+  background: #304A39;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #71866A;
+}
+
+/* Light-theme scrollbar inside FoundIt! interactive previews */
+.foundit-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #d6d3d1 #f8f7f6;
+}
+.foundit-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.foundit-scroll::-webkit-scrollbar-track {
+  background: #f8f7f6;
+}
+.foundit-scroll::-webkit-scrollbar-thumb {
+  background: #d6d3d1;
+  border-radius: 9999px;
+}
+.foundit-scroll::-webkit-scrollbar-thumb:hover {
+  background: #7f0101;
+}
+
+/* Light-theme scrollbar inside Orale interactive previews */
+.orale-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 #f8fafc;
+}
+.orale-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.orale-scroll::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+.orale-scroll::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+.orale-scroll::-webkit-scrollbar-thumb:hover {
+  background: #0d9488;
+}
+
+/* Subtle organic grain overlay */
+.bg-forest-noise {
+  background-image: radial-gradient(rgba(220, 232, 218, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Custom shiny cursor active state on desktop fine pointers */
+@media (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  html.custom-cursor-active,
+  html.custom-cursor-active *:not(input):not(textarea):not(select) {
+    cursor: none !important;
+  }
+}
